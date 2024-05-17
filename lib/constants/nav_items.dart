@@ -10,8 +10,11 @@ List<String> navTitles = [
 
 List<IconData> navIcons = [
   Icons.home,
-  Icons.android_outlined,
-  Icons.back_hand,
+  Icons.handyman_outlined,
+  Icons.apps,
   Icons.web,
   Icons.quick_contacts_mail,
 ];
+
+
+//https://uxwing.com/google-firebase-icon/
