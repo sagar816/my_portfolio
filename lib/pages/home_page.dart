@@ -1,9 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:my_portfolio/constants/colors.dart';
 import 'package:my_portfolio/constants/size.dart';
-import 'package:my_portfolio/utils/project_utils.dart';
+import 'package:my_portfolio/widgets/contact_section.dart';
 import 'package:my_portfolio/widgets/drawer_mobile.dart';
-import 'package:my_portfolio/widgets/project_card.dart';
+import 'package:my_portfolio/widgets/footer.dart';
+import 'package:my_portfolio/widgets/header_desktop.dart';
+import 'package:my_portfolio/widgets/header_mobile.dart';
+import 'package:my_portfolio/widgets/main_desktop.dart';
+import 'package:my_portfolio/widgets/main_mobile.dart';
+import 'package:my_portfolio/widgets/projects_section.dart';
+import 'package:my_portfolio/widgets/skills_desktop.dart';
+import 'package:my_portfolio/widgets/skills_mobile.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -15,12 +22,15 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   final scaffoldKey =
       GlobalKey<ScaffoldState>(); // to programatically open drawer - define key
+  final scrollController = ScrollController();
+  final List<GlobalKey> navbarKeys = List.generate(4, (index) => GlobalKey());
+
   @override
   // ignore: dead_code
   Widget build(BuildContext context) {
     final screenSize = MediaQuery.of(context).size;
     final screenWidth = screenSize.width;
-    final screenHeight = screenSize.height;
+    // final screenHeight = screenSize.height;
 
     return LayoutBuilder(builder: (context, constraints) {
       //this constraints contain information about screen size or window size that can be used to manipulate UI
@@ -29,89 +39,100 @@ class _HomePageState extends State<HomePage> {
         backgroundColor: CustomColor.scaffoldBg,
         endDrawer: constraints.maxWidth >= kMinDesktopWidth
             ? null
-            : const DrawerMobile(),
-        body: ListView(
+            : DrawerMobile(onNavItemtap: (int navIndex) {
+                scaffoldKey.currentState?.closeEndDrawer();
+                //call func
+                scrollToSection(navIndex);
+              }),
+        body: SingleChildScrollView(
+          controller: scrollController,
           scrollDirection: Axis.vertical,
-          children: [
-            //MAIN
-            // if (constraints.maxWidth >= kMinDesktopWidth)
-            //   const HeaderDesktop()
-            // else
-            //   HeaderMobile(
-            //     onLogoTap: () {},
-            //     onMenuTap: () {
-            //       scaffoldKey.currentState?.openEndDrawer();
-            //     },
-            //   ),
+          child: Column(
+            children: [
+              SizedBox(key: navbarKeys.first),
+              //MAIN
+              if (constraints.maxWidth >= kMinDesktopWidth)
+                HeaderDesktop(
+                  onNavMenuTap: (int navIndex) {
+                    //call function
+                    scrollToSection(navIndex);
+                  },
+                )
+              else
+                HeaderMobile(
+                  onLogoTap: () {},
+                  onMenuTap: () {
+                    scaffoldKey.currentState?.openEndDrawer();
+                  },
+                ),
 
-            // // const MainDesktop(),
-            // if (constraints.maxWidth >= kMinDesktopWidth)
-            //   const MainDesktop()
-            // else
-            //   const MainMobile(),
+              // const MainDesktop(),
+              if (constraints.maxWidth >= kMinDesktopWidth)
+                const MainDesktop()
+              else
+                const MainMobile(),
 
-            // //SKILLS
-            // Container(
-            //   width: screenWidth,
-            //   padding: const EdgeInsets.fromLTRB(25, 20, 25, 60),
-            //   color: CustomColor.bgLight1,
-            //   child: Column(mainAxisSize: MainAxisSize.min, children: [
-            //     //title
-            //     const Text(
-            //       "What I can do",
-            //       style: TextStyle(
-            //         fontSize: 24,
-            //         fontWeight: FontWeight.bold,
-            //         color: CustomColor.whitePrimary,
-            //       ),
-            //     ),
-            //     const SizedBox(height: 50),
-
-            //     // platforms and skills
-            //     if (constraints.maxWidth >= kMedDesktopWidth)
-            //       const SkillsDesktop()
-            //     else
-            //       const SkillsMobile(),
-            //   ]),
-            // ),
-
-            //PROJECT
-            Container(
-              width: screenWidth,
-              padding: const EdgeInsets.fromLTRB(25, 20, 25, 60),
-              child: Column(
-                children: [
-                  //Work projects title
+              //SKILLS
+              Container(
+                key: navbarKeys[1],
+                width: screenWidth,
+                padding: const EdgeInsets.fromLTRB(25, 20, 25, 60),
+                color: CustomColor.bgLight1,
+                child: Column(mainAxisSize: MainAxisSize.min, children: [
+                  //title
                   const Text(
-                    "Work Projects",
+                    "What I can do",
                     style: TextStyle(
                       fontSize: 24,
                       fontWeight: FontWeight.bold,
                       color: CustomColor.whitePrimary,
                     ),
                   ),
+                  const SizedBox(height: 50),
 
-                  // Work projects cards
-                  ProjectCardWidget(
-                    project: workProjectUtils.first,
-                  )
-                ],
+                  // platforms and skills
+                  if (constraints.maxWidth >= kMedDesktopWidth)
+                    const SkillsDesktop()
+                  else
+                    const SkillsMobile(),
+                ]),
               ),
-            ),
-            //CONTACT
-            Container(
-              height: 500,
-              width: double.maxFinite,
-              color: Colors.blueGrey,
-            ),
-            //FOOTER
-            Container(
-              height: 500,
-              width: double.maxFinite,
-            )
-          ],
+
+              SizedBox(
+                height: 30,
+              ),
+
+              //PROJECT
+              ProjectsSection(
+                key: navbarKeys[2],
+              ),
+
+              SizedBox(
+                height: 30,
+              ),
+              //CONTACT
+              ContactSection(
+                key: navbarKeys[3],
+              ),
+              SizedBox(
+                height: 30,
+              ),
+
+              //FOOTER
+              const Footer(),
+            ],
+          ),
         ),
       );
     });
+  }
+
+  void scrollToSection(int navIndex) {
+    final key = navbarKeys[navIndex];
+    Scrollable.ensureVisible(
+      key.currentContext!,
+      duration: const Duration(milliseconds: 500),
+      curve: Curves.easeInOut,
+    );
   }
 }

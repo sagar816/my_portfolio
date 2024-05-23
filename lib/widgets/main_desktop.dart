@@ -23,7 +23,7 @@ class MainDesktop extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               const Text(
-                "Hi,\nI'm Sagar Tambatkar\nA Flutter Developer",
+                "Hi,\nI'm Sagar Tambatkar\nA Front-End Developer",
                 style: TextStyle(
                   fontSize: 30.0,
                   height: 1.5,

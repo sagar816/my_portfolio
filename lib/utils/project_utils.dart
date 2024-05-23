@@ -47,25 +47,25 @@ List<ProjectUtils> profProjectUtils = [
 
 List<ProjectUtils> workProjectUtils = [
      ProjectUtils(
-      title: "Cafe App",
+      title: "p App",
       subtitle: "App to manage your restaurant business",
       webLink: "https://cafe-app-01.web.app/",
       image: 'assets/projects/1.png'),
 
     ProjectUtils(
-      title: "Cafe App",
+      title: "p App",
       subtitle: "App to manage your restaurant business",
       webLink: "https://cafe-app-01.web.app/",
       image: 'assets/projects/1.png'),
 
     ProjectUtils(
-      title: "Cafe App",
+      title: "p App",
       subtitle: "App to manage your restaurant business",
       webLink: "https://cafe-app-01.web.app/",
       image: 'assets/projects/1.png'),
 
     ProjectUtils(
-      title: "Cafe App",
+      title: "p App",
       subtitle: "App to manage your restaurant business",
       webLink: "https://cafe-app-01.web.app/",
       image: 'assets/projects/1.png'),

@@ -13,8 +13,8 @@ class ProjectCardWidget extends StatelessWidget {
       clipBehavior: Clip.antiAlias,
       height: 400,
       width: 300,
-      // height: 280,
-      // width: 250,
+      // height: 290,
+      // width: 260,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(10),
         color: CustomColor.bgLight2,
@@ -45,7 +45,7 @@ class ProjectCardWidget extends StatelessWidget {
             child: Text(
               project.subtitle,
               style: const TextStyle(
-                  fontSize: 10, color: CustomColor.whiteSecondary),
+                  fontSize: 12, color: CustomColor.whiteSecondary),
             ),
           ),
 
