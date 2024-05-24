@@ -25,50 +25,48 @@ List<ProjectUtils> profProjectUtils = [
       subtitle: "App to manage your restaurant business",
       webLink: "https://cafe-app-01.web.app/",
       image: 'assets/projects/1.png'),
-  ProjectUtils(
-      title: "Cafe App",
-      subtitle: "App to manage your restaurant business",
-      webLink: "https://cafe-app-01.web.app/",
-      image: 'assets/projects/1.png'),
-  ProjectUtils(
-      title: "Cafe App",
-      subtitle: "App to manage your restaurant business",
-      webLink: "https://cafe-app-01.web.app/",
-      image: 'assets/projects/1.png'),
-  ProjectUtils(
-      title: "Cafe App",
-      subtitle: "App to manage your restaurant business",
-      webLink: "https://cafe-app-01.web.app/",
-      image: 'assets/projects/1.png'),
+  // ProjectUtils(
+  //     title: "Cafe App",
+  //     subtitle: "App to manage your restaurant business",
+  //     webLink: "https://cafe-app-01.web.app/",
+  //     image: 'assets/projects/1.png'),
+  // ProjectUtils(
+  //     title: "Cafe App",
+  //     subtitle: "App to manage your restaurant business",
+  //     webLink: "https://cafe-app-01.web.app/",
+  //     image: 'assets/projects/1.png'),
+  // ProjectUtils(
+  //     title: "Cafe App",
+  //     subtitle: "App to manage your restaurant business",
+  //     webLink: "https://cafe-app-01.web.app/",
+  //     image: 'assets/projects/1.png'),
 ];
 
 // #################
 // PRACTICE PROJECTS
 
 List<ProjectUtils> workProjectUtils = [
-     ProjectUtils(
-      title: "p App",
-      subtitle: "App to manage your restaurant business",
-      webLink: "https://cafe-app-01.web.app/",
-      image: 'assets/projects/1.png'),
+  //  ProjectUtils(
+  //   title: "p App",
+  //   subtitle: "App to manage your restaurant business",
+  //   webLink: "https://cafe-app-01.web.app/",
+  //   image: 'assets/projects/1.png'),
 
-    ProjectUtils(
-      title: "p App",
-      subtitle: "App to manage your restaurant business",
-      webLink: "https://cafe-app-01.web.app/",
-      image: 'assets/projects/1.png'),
+  // ProjectUtils(
+  //   title: "p App",
+  //   subtitle: "App to manage your restaurant business",
+  //   webLink: "https://cafe-app-01.web.app/",
+  //   image: 'assets/projects/1.png'),
 
-    ProjectUtils(
-      title: "p App",
-      subtitle: "App to manage your restaurant business",
-      webLink: "https://cafe-app-01.web.app/",
-      image: 'assets/projects/1.png'),
+  // ProjectUtils(
+  //   title: "p App",
+  //   subtitle: "App to manage your restaurant business",
+  //   webLink: "https://cafe-app-01.web.app/",
+  //   image: 'assets/projects/1.png'),
 
-    ProjectUtils(
-      title: "p App",
-      subtitle: "App to manage your restaurant business",
-      webLink: "https://cafe-app-01.web.app/",
-      image: 'assets/projects/1.png'),
-
-
+  // ProjectUtils(
+  //   title: "p App",
+  //   subtitle: "App to manage your restaurant business",
+  //   webLink: "https://cafe-app-01.web.app/",
+  //   image: 'assets/projects/1.png'),
 ];
