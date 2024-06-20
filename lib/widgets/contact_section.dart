@@ -1,9 +1,10 @@
+import 'dart:js' as js;
+
 import 'package:flutter/material.dart';
 import 'package:my_portfolio/constants/colors.dart';
 import 'package:my_portfolio/constants/size.dart';
 import 'package:my_portfolio/constants/sns_links.dart';
 import 'package:my_portfolio/widgets/custom_text_field.dart';
-import 'dart:js' as js;
 
 class ContactSection extends StatelessWidget {
   const ContactSection({super.key});
@@ -50,7 +51,7 @@ class ContactSection extends StatelessWidget {
             ),
             child: CustomTextField(
               hintText: "Your message",
-              maxLines: 20,
+              maxLines: 7,
             ),
           ),
           const SizedBox(
@@ -94,28 +95,28 @@ class ContactSection extends StatelessWidget {
                   js.context.callMethod('open', [SnsLinks.github]);
                 },
                 child: Image.asset(
-                  "assets/web.png",
+                  "assets/site2.png",
                   width: 28,
                 ),
               ),
               InkWell(
                 onTap: () {},
                 child: Image.asset(
-                  "assets/web.png",
+                  "assets/gh5.png",
                   width: 28,
                 ),
               ),
               InkWell(
                 onTap: () {},
                 child: Image.asset(
-                  "assets/web.png",
+                  "assets/lin1.png",
                   width: 28,
                 ),
               ),
               InkWell(
                 onTap: () {},
                 child: Image.asset(
-                  "assets/web.png",
+                  "assets/call2.png",
                   width: 28,
                 ),
               ),
