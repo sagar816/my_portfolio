@@ -99,7 +99,7 @@ class _HomePageState extends State<HomePage> {
               ),
 
               SizedBox(
-                height: 30,
+                height: 50,
               ),
 
               //PROJECT

@@ -92,34 +92,38 @@ class ContactSection extends StatelessWidget {
             children: [
               InkWell(
                 onTap: () {
-                  js.context.callMethod('open', [SnsLinks.github]);
+                  js.context.callMethod('open', [SnsLinks.portfolio]);
                 },
                 child: Image.asset(
-                  "assets/site2.png",
+                  "assets/pf1.png",
                   width: 28,
                 ),
               ),
               InkWell(
-                onTap: () {},
+                onTap: () {
+                  js.context.callMethod('open', [SnsLinks.github]);
+                },
                 child: Image.asset(
                   "assets/gh5.png",
                   width: 28,
                 ),
               ),
               InkWell(
-                onTap: () {},
+                onTap: () {
+                  js.context.callMethod('open', [SnsLinks.linkedIn]);
+                },
                 child: Image.asset(
-                  "assets/lin1.png",
+                  "assets/ln6.png",
                   width: 28,
                 ),
               ),
-              InkWell(
-                onTap: () {},
-                child: Image.asset(
-                  "assets/call2.png",
-                  width: 28,
-                ),
-              ),
+              // InkWell(
+              //   onTap: () {},
+              //   child: Image.asset(
+              //     "assets/call2.png",
+              //     width: 28,
+              //   ),
+              // ),
             ],
           )
         ],

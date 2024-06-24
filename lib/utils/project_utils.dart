@@ -26,20 +26,21 @@ List<ProjectUtils> profProjectUtils = [
       title: "Cafe App",
       subtitle: "App to manage your restaurant business",
       webLink: "https://cafe-app-01.web.app/",
+      github: "https://github.com/sagar816/cafe_client_01.git",
       image: 'assets/projects/1.png'),
   ProjectUtils(
       title: "Event Management App",
       subtitle: "App to manage your Event Seamlessly",
-      webLink: "https://cafe-app-01.web.app/",
+      github: "https://github.com/sagar816/event_mgt_app_01.git",
       image: 'assets/projects/efi.png'),
   ProjectUtils(
       title: "Wordpress - Flutter RESTApi App",
       subtitle: "App to connect your wordpress backend to flutter",
-      webLink: "https://cafe-app-01.web.app/",
+      github: "https://github.com/sagar816/wordpress_flutter.git",
       image: 'assets/projects/Wp1.png'),
   // ProjectUtils(
-  //     title: "Cafe App",
-  //     subtitle: "App to manage your restaurant business",
+  //     title: "E-Commerce App",
+  //     subtitle: "App to sell shoes online",
   //     webLink: "https://cafe-app-01.web.app/",
   //     image: 'assets/projects/1.png'),
 ];
@@ -51,19 +52,19 @@ List<ProjectUtils> workProjectUtils = [
   ProjectUtils(
       title: "Laravel - Flutter Communication",
       subtitle: "Connection Laravel backend to Flutter Frontend",
-      webLink: "https://cafe-app-01.web.app/",
+      github: "https://github.com/sagar816/ConnectFlutterLaravel.git",
       image: 'assets/projects/Laravel.png'),
 
   ProjectUtils(
       title: "WhatsApp Flutter UI",
       subtitle: "Clone of WhatsApp UI",
-      webLink: "https://cafe-app-01.web.app/",
+      github: "https://github.com/sagar816/whatsapp_ui.git",
       image: 'assets/projects/WA1.png'),
 
   ProjectUtils(
       title: "Maze Runner Game",
       subtitle: "Maze Runner Game Made using flutter package",
-      webLink: "https://cafe-app-01.web.app/",
+      github: "https://github.com/sagar816/find_path_game.git",
       image: 'assets/projects/Maze.png'),
 
   // ProjectUtils(

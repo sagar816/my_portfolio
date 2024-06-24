@@ -1,7 +1,8 @@
+import 'dart:js' as js;
+
 import 'package:flutter/material.dart';
 import 'package:my_portfolio/constants/colors.dart';
 import 'package:my_portfolio/utils/project_utils.dart';
-import 'dart:js' as js;
 
 class ProjectCardWidget extends StatelessWidget {
   const ProjectCardWidget({super.key, required this.project});
@@ -79,7 +80,7 @@ class ProjectCardWidget extends StatelessWidget {
                       padding: const EdgeInsets.only(left: 11),
                       child: InkWell(
                         onTap: () {
-                           js.context.callMethod("open", [project.androidLink]);
+                          js.context.callMethod("open", [project.androidLink]);
                         },
                         child: Image.asset(
                           "assets/android.png",
@@ -92,10 +93,23 @@ class ProjectCardWidget extends StatelessWidget {
                       padding: const EdgeInsets.only(left: 11),
                       child: InkWell(
                         onTap: () {
-                        js.context.callMethod("open", [project.webLink]);
+                          js.context.callMethod("open", [project.webLink]);
                         },
                         child: Image.asset(
-                          "assets/web.png",
+                          "assets/app2.png",
+                          width: 30,
+                        ),
+                      ),
+                    ),
+                  if (project.github != null)
+                    Padding(
+                      padding: const EdgeInsets.only(left: 11),
+                      child: InkWell(
+                        onTap: () {
+                          js.context.callMethod("open", [project.github]);
+                        },
+                        child: Image.asset(
+                          "assets/gh5.png",
                           width: 30,
                         ),
                       ),

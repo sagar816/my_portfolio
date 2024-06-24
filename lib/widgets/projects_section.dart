@@ -43,7 +43,7 @@ class ProjectsSection extends StatelessWidget {
             ),
           ),
           const SizedBox(
-            height: 50,
+            height: 120,
           ),
           //Practice projects title
           const Text(
@@ -55,7 +55,7 @@ class ProjectsSection extends StatelessWidget {
             ),
           ),
           const SizedBox(
-            height: 80,
+            height: 50,
           ),
           // Practice projects cards
           ConstrainedBox(
