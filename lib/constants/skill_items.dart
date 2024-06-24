@@ -1,6 +1,6 @@
 const List<Map> platformItems = [
-  {"img": "assets/android.png", "title": "Android Dev"},
-  {"img": "assets/web.png", "title": "Web Dev"},
+  {"img": "assets/a1.png", "title": "App Dev"},
+  {"img": "assets/w2.png", "title": "Web Dev"},
 ];
 
 const List<Map> skillItems = [
@@ -11,9 +11,8 @@ const List<Map> skillItems = [
   {"img": "assets/javascript.png", "title": "JS"},
   {"img": "assets/vue.png", "title": "Vue.js"},
   {"img": "assets/firebase.png", "title": "Firebase"},
-  {"img": "assets/wordpress.png", "title": "Wordpress"},
+  {"img": "assets/wp6.png", "title": "Wordpress"},
   {"img": "assets/php.png", "title": "PHP"},
   {"img": "assets/laravel.png", "title": "Laravel"},
   {"img": "assets/sql.png", "title": "MySQL"},
-
 ];

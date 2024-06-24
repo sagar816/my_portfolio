@@ -92,14 +92,14 @@ class MainMobile extends StatelessWidget {
           const SizedBox(
             height: 50,
           ),
-          SizedBox(
-            width: 300,
-            // height: 100,
-            child: OutlinedButton(
-              onPressed: () {},
-              child: const Text("Get in touch"),
-            ),
-          ),
+          // SizedBox(
+          //   width: 300,
+          //   // height: 100,
+          //   child: OutlinedButton(
+          //     onPressed: () {},
+          //     child: const Text("Get in touch"),
+          //   ),
+          // ),
         ],
       ),
     );

@@ -2,9 +2,7 @@ import 'dart:js' as js;
 
 import 'package:flutter/material.dart';
 import 'package:my_portfolio/constants/colors.dart';
-import 'package:my_portfolio/constants/size.dart';
 import 'package:my_portfolio/constants/sns_links.dart';
-import 'package:my_portfolio/widgets/custom_text_field.dart';
 
 class ContactSection extends StatelessWidget {
   const ContactSection({super.key});
@@ -18,7 +16,7 @@ class ContactSection extends StatelessWidget {
         children: [
           //title
           const Text(
-            "Get in touch",
+            "H i r e  M e !!",
             style: TextStyle(
                 fontWeight: FontWeight.bold,
                 fontSize: 24,
@@ -26,53 +24,53 @@ class ContactSection extends StatelessWidget {
           ),
 
           const SizedBox(height: 50),
-          ConstrainedBox(
-              constraints: const BoxConstraints(
-                maxWidth: 700,
-                maxHeight: 100,
-              ),
-              child: LayoutBuilder(
-                builder: (context, constraints) {
-                  if (constraints.maxWidth >= kMinDesktopWidth) {
-                    return buildNameEmailFieldDesktop();
-                  }
+          // ConstrainedBox(
+          //     constraints: const BoxConstraints(
+          //       maxWidth: 700,
+          //       maxHeight: 100,
+          //     ),
+          //     child: LayoutBuilder(
+          //       builder: (context, constraints) {
+          //         if (constraints.maxWidth >= kMinDesktopWidth) {
+          //           return buildNameEmailFieldDesktop();
+          //         }
 
-                  //else
-                  return buildNameEmailFieldMobile();
-                },
-              )),
-          const SizedBox(
-            height: 15,
-          ),
-          //message
-          ConstrainedBox(
-            constraints: const BoxConstraints(
-              maxWidth: 700,
-            ),
-            child: CustomTextField(
-              hintText: "Your message",
-              maxLines: 7,
-            ),
-          ),
-          const SizedBox(
-            height: 20,
-          ),
-          // send Button
+          //         //else
+          //         return buildNameEmailFieldMobile();
+          //       },
+          //     )),
+          // const SizedBox(
+          //   height: 15,
+          // ),
+          // //message
+          // ConstrainedBox(
+          //   constraints: const BoxConstraints(
+          //     maxWidth: 700,
+          //   ),
+          //   child: CustomTextField(
+          //     hintText: "Your message",
+          //     maxLines: 7,
+          //   ),
+          // ),
+          // const SizedBox(
+          //   height: 20,
+          // ),
+          // // send Button
           ConstrainedBox(
             constraints: const BoxConstraints(
               maxWidth: 700,
             ),
             child: SizedBox(
               width: double.maxFinite,
-              child: ElevatedButton(
-                onPressed: () {},
-                child: const Text("Get in Touch"),
-              ),
+              child: Center(child: Text("Get in Touch")),
+              // child: ElevatedButton(
+              //   onPressed: () {},
+              //   child: const Text("Get in Touch"),
             ),
           ),
 
           const SizedBox(
-            height: 30,
+            height: 15,
           ),
 
           ConstrainedBox(
@@ -131,47 +129,47 @@ class ContactSection extends StatelessWidget {
     );
   }
 
-  Row buildNameEmailFieldDesktop() {
-    return Row(
-      children: [
-        //name
-        Flexible(
-          child: CustomTextField(
-            hintText: "Your name",
-          ),
-        ),
-        const SizedBox(
-          width: 15,
-        ),
-        //email
-        Flexible(
-          child: CustomTextField(
-            hintText: "Your email",
-          ),
-        ),
-      ],
-    );
-  }
+  // Row buildNameEmailFieldDesktop() {
+  //   return Row(
+  //     children: [
+  //       //name
+  //       Flexible(
+  //         child: CustomTextField(
+  //           hintText: "Your name",
+  //         ),
+  //       ),
+  //       const SizedBox(
+  //         width: 15,
+  //       ),
+  //       //email
+  //       Flexible(
+  //         child: CustomTextField(
+  //           hintText: "Your email",
+  //         ),
+  //       ),
+  //     ],
+  //   );
+  // }
 
-  Column buildNameEmailFieldMobile() {
-    return Column(
-      children: [
-        //name
-        Flexible(
-          child: CustomTextField(
-            hintText: "Your name",
-          ),
-        ),
-        const SizedBox(
-          height: 15,
-        ),
-        //email
-        Flexible(
-          child: CustomTextField(
-            hintText: "Your email",
-          ),
-        ),
-      ],
-    );
-  }
+  // Column buildNameEmailFieldMobile() {
+  //   return Column(
+  //     children: [
+  //       //name
+  //       Flexible(
+  //         child: CustomTextField(
+  //           hintText: "Your name",
+  //         ),
+  //       ),
+  //       const SizedBox(
+  //         height: 15,
+  //       ),
+  //       //email
+  //       Flexible(
+  //         child: CustomTextField(
+  //           hintText: "Your email",
+  //         ),
+  //       ),
+  //     ],
+  //   );
+  // }
 }

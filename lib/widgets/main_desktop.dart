@@ -34,13 +34,13 @@ class MainDesktop extends StatelessWidget {
               const SizedBox(
                 height: 15,
               ),
-              SizedBox(
-                width: 285,
-                child: OutlinedButton(
-                  onPressed: () {},
-                  child: const Text("Get in touch"),
-                ),
-              ),
+              // SizedBox(
+              //   width: 285,
+              //   child: OutlinedButton(
+              //     onPressed: () {},
+              //     child: const Text("Get in touch"),
+              //   ),
+              // ),
             ],
           ),
           ClipRRect(

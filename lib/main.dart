@@ -18,3 +18,6 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+
+
+//flutter build web  - netlify
