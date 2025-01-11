@@ -64,9 +64,67 @@ class ProjectsSection extends StatelessWidget {
               spacing: 25,
               runSpacing: 25,
               children: [
-                for (int i = 0; i < workProjectUtils.length; i++)
+                for (int i = 0; i < pracProjectUtils.length; i++)
                   ProjectCardWidget(
-                    project: workProjectUtils[i],
+                    project: pracProjectUtils[i],
+                  ),
+              ],
+            ),
+          ),
+          const SizedBox(
+            height: 120,
+          ),
+          //Flutter Widgets Title
+          const Text(
+            "Flutter Widgets",
+            style: TextStyle(
+              fontSize: 24,
+              fontWeight: FontWeight.bold,
+              color: CustomColor.whitePrimary,
+            ),
+          ),
+          const SizedBox(
+            height: 50,
+          ),
+          // Work projects cards
+          ConstrainedBox(
+            constraints: const BoxConstraints(maxWidth: 950),
+            child: Wrap(
+              spacing: 25,
+              runSpacing: 25,
+              children: [
+                for (int i = 0; i < profProjectUtils.length; i++)
+                  ProjectCardWidget(
+                    project: profProjectUtils[i],
+                  ),
+              ],
+            ),
+          ),
+          const SizedBox(
+            height: 120,
+          ),
+          // Dart Core and OOPs title
+          const Text(
+            "Dart Core and OOPs",
+            style: TextStyle(
+              fontSize: 24,
+              fontWeight: FontWeight.bold,
+              color: CustomColor.whitePrimary,
+            ),
+          ),
+          const SizedBox(
+            height: 50,
+          ),
+          // Work projects cards
+          ConstrainedBox(
+            constraints: const BoxConstraints(maxWidth: 950),
+            child: Wrap(
+              spacing: 25,
+              runSpacing: 25,
+              children: [
+                for (int i = 0; i < profProjectUtils.length; i++)
+                  ProjectCardWidget(
+                    project: profProjectUtils[i],
                   ),
               ],
             ),

@@ -48,12 +48,88 @@ List<ProjectUtils> profProjectUtils = [
 // #################
 // PRACTICE PROJECTS
 
-List<ProjectUtils> workProjectUtils = [
+List<ProjectUtils> pracProjectUtils = [
   ProjectUtils(
       title: "Laravel - Flutter Communication",
       subtitle: "Connection Laravel backend to Flutter Frontend",
       github: "https://github.com/sagar816/ConnectFlutterLaravel.git",
       image: 'assets/projects/Laravel.png'),
+
+  ProjectUtils(
+      title: "Maze Runner Game",
+      subtitle: "Maze Runner Game Made using flutter package",
+      github: "https://github.com/sagar816/find_path_game.git",
+      image: 'assets/projects/Maze.png'),
+
+  ProjectUtils(
+      title: "WhatsApp Flutter UI",
+      subtitle: "Clone of WhatsApp UI",
+      github: "https://github.com/sagar816/whatsapp_ui.git",
+      image: 'assets/projects/WA1.png'),
+
+  ProjectUtils(
+      title: "Maze Runner Game",
+      subtitle: "Maze Runner Game Made using flutter package",
+      github: "https://github.com/sagar816/find_path_game.git",
+      image: 'assets/projects/Maze.png'),
+
+  // ProjectUtils(
+  //   title: "p App",
+  //   subtitle: "App to manage your restaurant business",
+  //   webLink: "https://cafe-app-01.web.app/",
+  //   image: 'assets/projects/1.png'),
+];
+
+// #################
+// Flutter Widgets
+
+List<ProjectUtils> flrProjectUtils = [
+  ProjectUtils(
+      title: "Laravel - Flutter Communication",
+      subtitle: "Connection Laravel backend to Flutter Frontend",
+      github: "https://github.com/sagar816/ConnectFlutterLaravel.git",
+      image: 'assets/projects/Laravel.png'),
+
+  ProjectUtils(
+      title: "Maze Runner Game",
+      subtitle: "Maze Runner Game Made using flutter package",
+      github: "https://github.com/sagar816/find_path_game.git",
+      image: 'assets/projects/Maze.png'),
+
+  ProjectUtils(
+      title: "WhatsApp Flutter UI",
+      subtitle: "Clone of WhatsApp UI",
+      github: "https://github.com/sagar816/whatsapp_ui.git",
+      image: 'assets/projects/WA1.png'),
+
+  ProjectUtils(
+      title: "Maze Runner Game",
+      subtitle: "Maze Runner Game Made using flutter package",
+      github: "https://github.com/sagar816/find_path_game.git",
+      image: 'assets/projects/Maze.png'),
+
+  // ProjectUtils(
+  //   title: "p App",
+  //   subtitle: "App to manage your restaurant business",
+  //   webLink: "https://cafe-app-01.web.app/",
+  //   image: 'assets/projects/1.png'),
+];
+
+// #################
+// Dart Core and OOPs
+
+List<ProjectUtils> dartOopsUtils = [
+  ProjectUtils(
+      title: "Laravel - Flutter Communication",
+      subtitle: "Connection Laravel backend to Flutter Frontend",
+      github: "https://github.com/sagar816/ConnectFlutterLaravel.git",
+      image: 'assets/projects/Laravel.png'),
+
+  ProjectUtils(
+      title: "Maze Runner Game",
+      subtitle: "Maze Runner Game Made using flutter package",
+      github: "https://github.com/sagar816/find_path_game.git",
+      image: 'assets/projects/Maze.png'),
 
   ProjectUtils(
       title: "WhatsApp Flutter UI",
